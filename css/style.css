@@ -1,0 +1,21 @@
+:root{
+    --main-bg-color:#344C64;
+    --nav-bg-color:#57A6A1;
+    --button-bg-ocuro:#240750;
+    --button-bg-claro:#344C64;
+}
+
+
+#header, #footer{
+    background-color: var(--nav-bg-color);
+}
+#listLi{
+    text-decoration: none;
+    list-style: none;
+}
+#listItem{
+    text-decoration: none;
+}
+#main{
+    background-color: var(--main-bg-color);
+}
