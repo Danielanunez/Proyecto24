@@ -5,9 +5,17 @@
     --button-bg-claro:#344C64;
 }
 
-
 #header, #footer{
     background-color: var(--nav-bg-color);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+/*----------- header --------------*/
+#lista{
+    display: flex;
+    flex-direction: row;
+    
 }
 #listLi{
     text-decoration: none;
@@ -16,6 +24,18 @@
 #listItem{
     text-decoration: none;
 }
+/*----------- Main-----------------*/
 #main{
     background-color: var(--main-bg-color);
+}
+
+/*---------- Footer ---------------*/
+#listaFooter{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+}
+#footerItem{
+    text-decoration: none;
 }
