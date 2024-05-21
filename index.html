@@ -3,20 +3,63 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>FilmePulse</title>
         <meta name="description" content="Html-css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="shortcut icon" href="/assets/img/film-slate.png" type="image/x-icon">
     </head>
     <body>
-        <header>cabecera</header>
+        <header>
+            <nav id="navLogo"><a href="#"><img src="/assets/img/logoListo.png" alt="Dibujo de pochoclos y letras 'FilmPule'"></a></nav>
+            <nav id="navLista">
+                <ol id="lista">
+                    <li id="listTendecia"><a href="#">Tendencia</a></li>
+                    <li id="listRegitro"><a href="#">Registrarse</a></li>
+                    <li id="listLogIn"><a href="#">Inicia Sesion</a></li>
+                   <!--<li id="listApi"><a href="#">Conectar a Api</a></li> SUGERENCIA-->
+                </ol>
+            </nav>
+        </header>
 
         <main>
-            <h1>¡Hola mundo!</h1>
+            <section id="banner">
+                <img src="/assets/img/Banner.jpg" alt="Imagen de dos personas frente a televisor">
+                <h1 id="tituloBanner">Peliculas y series ilimitadas en un solo lugar</h1>
+                <p id="textBanner1">Disfruta en cualquier lugar</p>
+                <p id="textBanner2">Cancela cuando quieras</p>
+                <button><a href="#">Registrarse</a></button>
+            </section>
+            <section id="buscar">
+                <h2 id="queBuscas">¿Qué estas buscando para ver?</h2>
+                <form action="post">
+                    <input type="search" name="buscar" id="buscar">
+                    <button type="submit" id="botonBuscar">Buscar</button>
+                </form>
+            </section>
+            <hr>
+            <section id="cardPeli">
+                <h2 id="tendencias">Las tendencias de hoy</h2>
+            </section>
+            <hr>
+            <section>
+                <h2 id="masVistas">Las mas vistas</h2>
+
+            </section>
         </main>
 
 
-        <footer>pie de pagina</footer>
-        <script src="" async defer></script>
+        <footer>
+            <nav id="navFooter">
+                <ol id="listaFooter">
+                    <li id="itemTerminos">Términos y condiciones</li>
+                    <li id="itemPerguntas">Preguntas Frecuentes</li>
+                    <li id="itemAyuda">Ayuda</li>
+                    <li id="itemAdministrador">Administrador Peliculas</li>
+                </ol>
+            </nav>
+            <a href="#"><img src="/assets/img/up-arrow.png" alt="Flecha para ir arriba"></a>
+        </footer>
+        <script src="/js/index.js" async defer></script>
     </body>
 </html>
