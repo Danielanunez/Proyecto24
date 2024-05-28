@@ -5,41 +5,73 @@
     --button-bg-claro:#344C64;
 }
 
-#header, #footer{
+
+/*----------- header --------------*/
+#header {
     background-color: var(--nav-bg-color);
     display: flex;
     flex-direction: row;
     width: 100%;
-}
-/*----------- header --------------*/
+    position: sticky;
+    top: 0;
+    z-index: 10;
 
-/* 
-
-#lista{
-    display: flex;
-    flex-direction: row;
-    
+    #lista{
+        display: flex;
+        flex-direction: row;
+        
+    }
 }
-#listLi{
-    text-decoration: none;
-    list-style: none;
-}
-#listItem{
-    text-decoration: none;
-}*/
 
 /*----------- Main-----------------*/
 #main{
     background-color: var(--main-bg-color);
+    #cajaBanner{
+        height: 100vh;
+        position: relative;
+        display: inline-block;
+        #textoBanner{
+            position: absolute;
+            top: 20%;
+            left: 15%;
+        }
+        #tituloBanner,#textBanner1, #textBanner2{
+            color: aliceblue;
+            margin: auto;
+            text-align: center;
+            padding-top: 2.5%;
+        }
+        #tituloBanner{
+            font-size: 3.5vw;
+        }
+        #textBanner1, #textBanner2{
+            font-size: 2.7vw;
+        }
+        #botonBanner{
+            padding-top: 3%;
+        }
+        #bannerLink{
+            width: 20%;
+            height: 10%;
+            margin: auto;
+            color: aliceblue;
+            background-color: var(--button-bg-ocuro);
+        }
+    }
+    
 }
 
 /*---------- Footer ---------------*/
-#listaFooter{
+#footer{
+    background-color: var(--nav-bg-color);
     display: flex;
     flex-direction: row;
-    list-style: none;
-    text-decoration: none;
-}
-#footerItem{
-    text-decoration: none;
+    width: 100%;
+
+    #listaFooter{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        text-decoration: none;
+    }
 }
